@@ -1,8 +1,5 @@
 package com.company;
 
-
-
-
 public class Produse{
 
     protected int idProdus;

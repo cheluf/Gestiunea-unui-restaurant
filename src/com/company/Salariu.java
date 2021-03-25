@@ -3,7 +3,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Salariu{
-
     private HashMap<String, Double>dictionar=new HashMap();
 
     public Salariu(String Nume, double salariu) {
