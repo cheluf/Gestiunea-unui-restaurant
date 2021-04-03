@@ -2,12 +2,13 @@ package com.company;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Salariu{
+public class Salariu implements SalariuService {
     private HashMap<String, Double>dictionar=new HashMap();
 
     public Salariu(String Nume, double salariu) {
         dictionar.put(Nume,salariu);
     }
+    @Override
     public void print(){
         for( Map.Entry<String, Double> entry : dictionar.entrySet() ){
             System.out.print(entry.getKey() + ":");
@@ -15,7 +16,8 @@ public class Salariu{
         }
     }
 
-    public void marire_salariu(String nume,double valoare){
+    @Override
+    public void marire_salariu(String nume, double valoare){
         double valoareCont;
         valoareCont=dictionar.get(nume).doubleValue();
         dictionar.put(nume,valoareCont + valoare);

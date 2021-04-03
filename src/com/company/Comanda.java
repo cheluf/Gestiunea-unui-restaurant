@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Vector;
 
-public class Comanda {
+public class Comanda implements ComandaService {
     private int nr_masa;
     private com.company.Meniu[] Prod_comandate;
 
@@ -14,6 +14,7 @@ public class Comanda {
         return Prod_comandate;
     }
 
+    @Override
     public void print() {
         System.out.print("Numar masa: " + nr_masa);
         System.out.print("\n|||||||||||||||");
@@ -22,6 +23,7 @@ public class Comanda {
         }
     }
 
+    @Override
     public void nota_de_plata(){
         System.out.print("Numar masa: " + nr_masa);
         System.out.print("\n|||||||||||||||");
