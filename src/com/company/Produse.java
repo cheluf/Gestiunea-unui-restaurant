@@ -8,6 +8,7 @@ public class Produse{
 
 
     public Produse(int idProdus, String nume_produs, com.company.Ingrediente[] ingrediente) {
+        audit.saudit("Produs");
         this.idProdus = idProdus;
         this.nume_produs = nume_produs;
         Ingrediente = ingrediente;
@@ -21,7 +22,8 @@ public class Produse{
         return Ingrediente;
     }
     public void print(){
-        System.out.println("Numele produslui: "+ this.nume_produs + "\nidProdus: " + this.idProdus + "\nIngrediente: ");
+        audit.saudit("Print produs");
+        System.out.println("Numele produslui: " + this.nume_produs + "\nidProdus: " + this.idProdus + "\nIngrediente: ");
         for(int i=0; i < getIngrediente().length; i++){
             System.out.println(Ingrediente[i].getNume());
         }

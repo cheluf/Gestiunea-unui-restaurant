@@ -1,11 +1,11 @@
 package com.company;
-import java.util.Vector;
 
 public class Comanda implements ComandaService {
     private int nr_masa;
     private com.company.Meniu[] Prod_comandate;
 
     public Comanda(int nr_masa, Meniu[] prod_comandate) {
+        audit.saudit("Comanda");
         this.nr_masa = nr_masa;
         Prod_comandate = prod_comandate;
     }

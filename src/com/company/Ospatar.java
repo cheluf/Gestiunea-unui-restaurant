@@ -9,6 +9,7 @@ public class Ospatar extends Angajat {
     }
 
     public void print(){
+        audit.saudit("Print ospatar");
         System.out.println("Nume si prenume :" + nume + " " + prenume);
         System.out.println("Data angajarii: " + data_angajarii);
         for(int i = 0 ; i < ture.length; i++){

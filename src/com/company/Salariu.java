@@ -10,6 +10,7 @@ public class Salariu implements SalariuService {
     }
     @Override
     public void print(){
+        audit.saudit("Print salariu");
         for( Map.Entry<String, Double> entry : dictionar.entrySet() ){
             System.out.print(entry.getKey() + ":");
             System.out.println(entry.getValue());
@@ -18,6 +19,7 @@ public class Salariu implements SalariuService {
 
     @Override
     public void marire_salariu(String nume, double valoare){
+        audit.saudit("Marire salariu");
         double valoareCont;
         valoareCont=dictionar.get(nume).doubleValue();
         dictionar.put(nume,valoareCont + valoare);
