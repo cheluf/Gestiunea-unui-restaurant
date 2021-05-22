@@ -25,7 +25,7 @@ public class Produse{
         audit.saudit("Print produs");
         System.out.println("Numele produslui: " + this.nume_produs + "\nidProdus: " + this.idProdus + "\nIngrediente: ");
         for(int i=0; i < getIngrediente().length; i++){
-            System.out.println(Ingrediente[i].getNume());
+            System.out.println(Ingrediente[i].getNume_ingredient());
         }
     }
 }

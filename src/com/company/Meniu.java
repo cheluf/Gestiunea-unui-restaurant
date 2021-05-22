@@ -15,7 +15,7 @@ public class Meniu extends Produse{
     public void print(){
         System.out.println("Numele produslui: "+ this.nume_produs + "\nidProdus: " + this.idProdus + "\nIngrediente: ");
         for(int i=0; i < getIngrediente().length; i++){
-            System.out.println(Ingrediente[i].getNume());
+            System.out.println(Ingrediente[i].getNume_ingredient());
         }
         System.out.print("Pret: " + pret);
     }
